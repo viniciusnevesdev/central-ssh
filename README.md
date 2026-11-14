@@ -1,4 +1,4 @@
-# Comandos — PWA para Termius
+# Central SSH — PWA para Termius
 
 Biblioteca pessoal de comandos para copiar e colar manualmente no Termius do iPhone. Estática, sem IA, sem backend, sem acesso ao MacBook e sem custos de operação.
 

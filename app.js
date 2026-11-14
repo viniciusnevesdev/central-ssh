@@ -269,7 +269,7 @@ document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
 $("exportBtn").addEventListener("click",()=>{
   try{
     const blob=new Blob([serializeBackup(items)],{type:"application/json;charset=utf-8"});
-    const url=URL.createObjectURL(blob),a=el("a");a.href=url;a.download="Comandos_backup_"+new Date().toISOString().slice(0,10)+".json";
+    const url=URL.createObjectURL(blob),a=el("a");a.href=url;a.download="CentralSSH_backup_"+new Date().toISOString().slice(0,10)+".json";
     document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
     toast("Backup preparado para salvar.");
   }catch(error){toast("Não foi possível exportar: "+error.message,true);}

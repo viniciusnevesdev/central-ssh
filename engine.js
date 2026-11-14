@@ -104,7 +104,7 @@ export function parseBackup(text) {
 
 export function serializeBackup(items) {
   return JSON.stringify({
-    app:"Comandos", version:BACKUP_VERSION, exportedAt:new Date().toISOString(),
+    app:"Central SSH", version:BACKUP_VERSION, exportedAt:new Date().toISOString(),
     items:items.map(normalizeItem)
   },null,2);
 }

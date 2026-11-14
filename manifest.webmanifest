@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Comandos — Biblioteca para Termius",
-  "short_name": "Comandos",
+  "name": "Central SSH — Comandos e Scripts",
+  "short_name": "Central SSH",
   "description": "Crie, personalize, copie e organize comandos para o Termius, mesmo offline.",
   "start_url": "./",
   "scope": "./",

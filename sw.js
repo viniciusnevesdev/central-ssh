@@ -1,4 +1,4 @@
-const CACHE="comandos-offline-v0.1.0";
+const CACHE="comandos-offline-v0.1.1";
 const ASSETS=["./","./index.html","./style.css","./app.js","./dados.js","./engine.js","./manifest.webmanifest","./icons/icon.svg","./icons/icon-192.png","./icons/icon-512.png"];
 self.addEventListener("install",event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));

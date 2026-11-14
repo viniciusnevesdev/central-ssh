@@ -24,7 +24,7 @@ export const SEED_COMMANDS = [
 
   { id:"github-status", title:"Status do GitHub", category:"GitHub", description:"Confere o login do GitHub CLI.", command:"gh auth status", tags:["login","gh"], favorite:false, risk:"normal" },
   { id:"github-repos", title:"Listar repositórios", category:"GitHub", description:"Lista os repositórios da conta configurada.", command:"gh repo list --limit 30", tags:["repositórios","gh"], favorite:true, risk:"normal" },
-  { id:"github-repo", title:"Consultar repositório", category:"GitHub", description:"Exibe informações de um repositório pelo nome.", command:"gh repo view {{repositorio}}", tags:["repositório","consulta"], favorite:false, risk:"normal", variables:[{name:"repositorio",label:"Usuário/repositório",type:"text",default:"viniciusnevesdev/comandos"}] },
+  { id:"github-repo", title:"Consultar repositório", category:"GitHub", description:"Exibe informações de um repositório pelo nome.", command:"gh repo view {{repositorio}}", tags:["repositório","consulta"], favorite:false, risk:"normal", variables:[{name:"repositorio",label:"Usuário/repositório",type:"text",default:"viniciusnevesdev/central-ssh"}] },
 
   { id:"projetos-listar", title:"Listar projetos", category:"Projetos", description:"Mostra as pastas dos seus projetos locais.", command:"ls -lah ~/Projetos", tags:["pastas","arquivos"], favorite:false, risk:"normal" },
   { id:"projetos-biblio", title:"Status do BiblioPromptos", category:"Projetos", description:"Confere alterações no projeto local, sem publicar.", command:"git -C ~/Projetos/bibliopromptos status --short --branch", tags:["bibliopromptos","git"], favorite:true, risk:"normal" },
